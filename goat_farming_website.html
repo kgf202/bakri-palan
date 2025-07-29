@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakri Palan Training | Goat Farming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3f4f6;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #43a047;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {text-decoration: underline;}
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://images.unsplash.com/photo-1588875901920-e3d9a2f6e1d1?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #2e7d32;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .lang-toggle {
+      text-align: right;
+      padding: 0.5rem 2rem;
+      background: #eee;
+    }
+    .lang-toggle button {
+      margin-left: 1rem;
+      padding: 0.3rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      const hiText = document.querySelectorAll('.hi');
+      const enText = document.querySelectorAll('.en');
+      if (lang === 'hi') {
+        hiText.forEach(el => el.style.display = 'block');
+        enText.forEach(el => el.style.display = 'none');
+      } else {
+        hiText.forEach(el => el.style.display = 'none');
+        enText.forEach(el => el.style.display = 'block');
+      }
+    }
+    window.onload = () => switchLang('hi');
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="hi">बकरी पालन प्रशिक्षण केंद्र</h1>
+    <h1 class="en">Goat Farming Training Center</h1>
+  </header>
+
+  <div class="lang-toggle">
+    <strong>भाषा | Language:</strong>
+    <button onclick="switchLang('hi')">हिन्दी</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <nav>
+    <a href="#about" class="hi">हमारे बारे में</a>
+    <a href="#courses" class="hi">कोर्स</a>
+    <a href="#contact" class="hi">संपर्क करें</a>
+
+    <a href="#about" class="en">About Us</a>
+    <a href="#courses" class="en">Courses</a>
+    <a href="#contact" class="en">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hi">कम लागत में अधिक मुनाफे वाला व्यवसाय शुरू करें</h1>
+    <h1 class="en">Start a Profitable Business with Low Investment</h1>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="hi">हमारे बारे में</h2>
+    <h2 class="en">About Us</h2>
+    <p class="hi">हमारा उद्देश्य ग्रामीण क्षेत्रों में स्वरोजगार को बढ़ावा देना है। हम बकरी पालन की आधुनिक तकनीकों की जानकारी प्रदान करते हैं।</p>
+    <p class="en">Our goal is to promote self-employment in rural areas. We provide training on modern goat farming techniques.</p>
+  </section>
+
+  <section class="section" id="courses">
+    <h2 class="hi">कोर्स विवरण</h2>
+    <h2 class="en">Course Details</h2>
+    <ul class="hi">
+      <li>बकरी नस्ल की पहचान और चयन</li>
+      <li>भोजन, टीकाकरण और देखभाल</li>
+      <li>रोग प्रबंधन और व्यवसाय योजना</li>
+    </ul>
+    <ul class="en">
+      <li>Breed identification and selection</li>
+      <li>Feeding, vaccination and care</li>
+      <li>Disease control and business planning</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="hi">संपर्क करें</h2>
+    <h2 class="en">Contact Us</h2>
+    <p class="hi">फोन: +91-9876543210<br>ईमेल: info@bakripalan.in</p>
+    <p class="en">Phone: +91-9876543210<br>Email: info@bakripalan.in</p>
+  </section>
+
+  <footer>
+    <p class="hi">© 2025 बकरी पालन प्रशिक्षण केंद्र</p>
+    <p class="en">© 2025 Goat Farming Training Center</p>
+  </footer>
+</body>
+</html>
